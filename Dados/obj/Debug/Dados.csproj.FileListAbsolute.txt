@@ -1,0 +1,6 @@
+D:\Users\739688\Desktop\ArquiteturaDotnet\Dados\bin\Debug\Dados.dll
+D:\Users\739688\Desktop\ArquiteturaDotnet\Dados\bin\Debug\Dados.pdb
+D:\Users\739688\Desktop\ArquiteturaDotnet\Dados\obj\Debug\Dados.csprojAssemblyReference.cache
+D:\Users\739688\Desktop\ArquiteturaDotnet\Dados\obj\Debug\Dados.csproj.CoreCompileInputs.cache
+D:\Users\739688\Desktop\ArquiteturaDotnet\Dados\obj\Debug\Dados.dll
+D:\Users\739688\Desktop\ArquiteturaDotnet\Dados\obj\Debug\Dados.pdb
