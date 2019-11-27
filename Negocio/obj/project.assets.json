@@ -25,6 +25,39 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Dados/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Dados.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Dados.dll": {}
+        }
+      },
+      "Modelo/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Modelo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Modelo.dll": {}
+        }
+      },
+      "Repositorio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Dados": "1.0.0",
+          "Modelo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repositorio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repositorio.dll": {}
+        }
       }
     }
   },
@@ -171,11 +204,28 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Dados/1.0.0": {
+      "type": "project",
+      "path": "../Dados/Dados.csproj",
+      "msbuildProject": "../Dados/Dados.csproj"
+    },
+    "Modelo/1.0.0": {
+      "type": "project",
+      "path": "../Modelo/Modelo.csproj",
+      "msbuildProject": "../Modelo/Modelo.csproj"
+    },
+    "Repositorio/1.0.0": {
+      "type": "project",
+      "path": "../Repositorio/Repositorio.csproj",
+      "msbuildProject": "../Repositorio/Repositorio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "Modelo >= 1.0.0",
+      "NETStandard.Library >= 2.0.3",
+      "Repositorio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -207,7 +257,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Users\\739688\\Desktop\\ArquiteturaDotnet\\Modelo\\Modelo.csproj": {
+              "projectPath": "D:\\Users\\739688\\Desktop\\ArquiteturaDotnet\\Modelo\\Modelo.csproj"
+            },
+            "D:\\Users\\739688\\Desktop\\ArquiteturaDotnet\\Repositorio\\Repositorio.csproj": {
+              "projectPath": "D:\\Users\\739688\\Desktop\\ArquiteturaDotnet\\Repositorio\\Repositorio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
